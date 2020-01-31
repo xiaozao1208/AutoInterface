@@ -1,2 +1,9 @@
 just for test;
+<<<<<<< HEAD
 I have a dream -dev_lj add
+=======
+add new username -dev_lijuan
+这个是master分支需要合并的内容
+分支dev_lm需要合并的内容；
+-这个是修改后合并的内容；--master
+--内容已经修改；--master
