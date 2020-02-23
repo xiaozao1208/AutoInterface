@@ -5,7 +5,10 @@
       "uri":"/demo"
     },
     "response":{
-      "text":"这是第一个moco框架的demo"
+      "text":"这是第一个moco框架的demo",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
     }
   }
 

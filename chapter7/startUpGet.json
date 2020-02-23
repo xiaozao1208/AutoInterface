@@ -6,23 +6,27 @@
       "method": "get"
     },
     "response": {
-      "text": "这是一个没有参数的get请求"
+      "text": "这是一个没有参数的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
     }
   },
   {
-    "description":"模拟一个带参数的get请求",
-     "request":{
-       "uri":"/getwithparam",
-       "method":"get",
-       "queries":{
-         "name":"lijuan",
-         "age":"20"
-       },
-       "response":{
-         "text":"张三今年20岁，你知道吗"
-       }
-
-     }
-
+    "description": "模拟一个带参数的get请求",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries": {
+        "name": "lijuan",
+        "age": "20"
+      }
+    },
+    "response": {
+      "text": "张三今年20岁，你知道吗",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
   }
 ]

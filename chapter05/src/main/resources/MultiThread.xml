@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Thread" parallel="classs" thread-count="3">
+    <!--
+    不同的级别是指 parallel 这个后面的参数
+    tests级别：不同的test tag 下的用例可以在不同的线程下执行
+                相同的test tag下的用例只能在同一个线程中去执行；
+     calsss级别：不同的class tag 下的用例可以在不同的线程中去执行
+                相同的 class tag 下的用例在同一个线程中执行；
+     methods级别：XXXXX;
+     thread-count ：代表了最大线程数；
+     xml文件配置这种方式不能指定线程池，只有方法上才可以执行线程池。
+    -->
+    <test name="demo1">
+        <classes name="c1">
+            <class name="com.learn.home.testng.multiThread.MultiThreadOnXml"/>
+            <class name="com.learn.home.testng.multiThread.MultiThreadOnAnnotion"/>
+            <class name="com.learn.home.testng.BasicAnnotation"/>
+        </classes>
+    </test>
+
+    <test name="demo2">
+        <classes name="c2">
+            <class name="com.learn.home.testng.multiThread.MultiThreadOnXml"/>
+            <class name="com.learn.home.testng.multiThread.MultiThreadOnAnnotion"/>
+            <class name="com.learn.home.testng.BasicAnnotation"/>
+        </classes>
+    </test>
+
+
+</suite>

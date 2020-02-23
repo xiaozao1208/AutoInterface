@@ -6,7 +6,10 @@
       "method":"post"
     },
     "response":{
-      "text":"这个我的一个mock的post请求"
+      "text":"这个我的一个mock的post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
     }
   },
   {
@@ -20,7 +23,10 @@
        }
      },
     "response":{
-      "text":"this is  a post request with parameters"
+      "text":"this is  a post request with parameters",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
     }
   }
 ]

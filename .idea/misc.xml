@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -9,7 +12,17 @@
         <option value="$PROJECT_DIR$/chapter9/pom.xml" />
         <option value="$PROJECT_DIR$/chapter11/pom.xml" />
         <option value="$PROJECT_DIR$/chapter5/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter05/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter6/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter10/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter12/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter13/pom.xml" />
+        <option value="$PROJECT_DIR$/InterfaceDemo/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/chapter12/src/main/resources/testng.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

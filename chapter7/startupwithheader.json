@@ -7,7 +7,7 @@
       "headers":{
         "content-type":"application/json"
       },
-      "queries":{
+      "json":{
         "name":"aaa",
         "age":"333"
       }
@@ -16,6 +16,9 @@
       "json":{
         "aaa":"success",
         "status":"1"
+      },
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
       }
     }
   }

@@ -1,21 +1,40 @@
 [
   {
-    "description":"这是一个带cookies信息的get请求",
-      "request":{
-        "uri":"get/with/cookies",
-        "method":"get",
-        "cookies":{
-          "login":"true"
-        }
+    "description":"这个是一个可以返回cookies的get请求",
+    "request":{
+        "uri":"/getCookies",
+        "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
       },
-      "response":{
-        "text":"这个是需要带cookies才能访问的请求"
+      "text":"恭喜你获得cookies信息成功",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
       }
+    }
+  },
+  {
+    "description": "这是一个带cookies信息的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text": "这个是需要带cookies才能访问的请求"
+    }
   },
   {
     "description":"这是一个带cookies信息的post请求",
     "request":{
-      "uri":"post/with/cookies",
+      "uri":"/post/with/cookies",
       "method":"post",
       "cookies":{
         "login":"true"
@@ -26,10 +45,13 @@
       }
     },
     "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
       "status":"200",
       "json":{
         "lijuan":"success",
-        "status":1
+        "status":"1"
       }
     }
   }

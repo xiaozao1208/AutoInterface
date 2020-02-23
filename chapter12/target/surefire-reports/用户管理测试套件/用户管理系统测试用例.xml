@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="LAPTOP-SONA6B0H" name="com.course.cases.LoginTest" tests="4" failures="0" timestamp="22 Feb 2020 07:49:37 GMT" time="13.963" errors="0">
+  <testcase name="loginTrue" time="6.47" classname="com.course.cases.LoginTest"/>
+  <testcase name="addUser" time="2.106" classname="com.course.cases.AddUserTest"/>
+  <testcase name="getUserListInfo" time="2.19" classname="com.course.cases.GetUserInfoListTest"/>
+  <testcase name="loginFalse" time="3.08" classname="com.course.cases.LoginTest"/>
+</testsuite>

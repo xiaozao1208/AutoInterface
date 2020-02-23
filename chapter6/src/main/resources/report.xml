@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="自己的接口测试套件">
+    <test name="这些是测试模块">
+       <classes>
+           <class name="com.reports.test.TestMethodsDemo"/>
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="logoDemo"/>
+                </methods>
+       </classes>
+    </test>
+    <!-- 添加监听 打印测试报告，需要添加监听器 <listeners> </listeners>-->
+    <!--listener 中 class-name 是工具类的路径-->
+    <listeners>
+     <!-- 这个不行，后期不会用的 <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/> -->
+        <listener class-name="com.reports.test.ExtentTestNGReporterListener"/>
+    </listeners>
+</suite>

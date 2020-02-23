@@ -1,3 +1,48 @@
-java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c startUp1.json
-java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c startUpGet.json
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8082 -c startUp1.json
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8082 -c startUpGet.json
 
+常见问题说明：
+1.[] {} 数量要正确，检查{{是否少；
+2."request"和"response" 是并列的两个大括号，切记位置要正确；
+3.相应结果乱码问题
+  在response中添加"headers": {"Content-Type": "text/html;charset=gbk"}
+4.浏览器可以访问get请求;访问post请求，需要使用jmeter;
+5.uri地址写的时候一定要加上 "/",jmeterz中 Content-Type 大写；
+  参数传入的格式： queries，forms，json
+
+get
+ "queries": {
+        "name": "lijuan",
+        "age": "20"
+      }
+post
+"forms":{
+         "name":"lijuan",
+         "age":"20"
+       }
+post-json(请求体和响应体都是json)
+request:
+ "json":{
+        "name":"aaa",
+        "age":"333"
+      }
+    },
+"response":{
+    "json":{
+    "aaa":"success",
+    "status":"1"
+[
+  {
+    "description":"模拟一个post请求",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"这个我的一个mock的post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]

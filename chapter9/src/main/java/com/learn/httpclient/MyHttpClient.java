@@ -17,6 +17,7 @@ public class MyHttpClient {
         //用来存放我的结果
         String result;
         HttpGet get =new HttpGet("http://www.baidu.com");
+        //这个用来执行get方法
         HttpClient client = new DefaultHttpClient();
         //执行get
         HttpResponse response = client.execute(get);

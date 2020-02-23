@@ -1,0 +1,32 @@
+2020-02-20 17:29:14.814  INFO 2224 --- [main] com.tester.Application                   : Starting Application on LAPTOP-SONA6B0H with PID 2224 (D:\ecplise-workspace\muke\AutoInterface\chapter11\target\classes started by allenhe888 in D:\ecplise-workspace\muke\AutoInterface)
+2020-02-20 17:29:14.832  INFO 2224 --- [main] com.tester.Application                   : No active profile set, falling back to default profiles: default
+2020-02-20 17:29:16.403  WARN 2224 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
+2020-02-20 17:29:17.787  INFO 2224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-02-20 17:29:17.856  INFO 2224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 17:29:17.858  INFO 2224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-02-20 17:29:18.122  INFO 2224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 17:29:18.123  INFO 2224 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3162 ms
+2020-02-20 17:29:19.173  INFO 2224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:29:19.710  INFO 2224 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-02-20 17:29:19.891  INFO 2224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-02-20 17:29:19.900  INFO 2224 --- [main] com.tester.Application                   : Started Application in 6.541 seconds (JVM running for 9.721)
+2020-02-20 17:29:48.850  INFO 2224 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 17:29:48.851  INFO 2224 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 17:29:48.875  INFO 2224 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-02-20 17:36:35.292  INFO 16964 --- [main] com.course1.Application                  : Starting Application on LAPTOP-SONA6B0H with PID 16964 (D:\ecplise-workspace\muke\AutoInterface\chapter11\target\classes started by allenhe888 in D:\ecplise-workspace\muke\AutoInterface)
+2020-02-20 17:36:35.300  INFO 16964 --- [main] com.course1.Application                  : No active profile set, falling back to default profiles: default
+2020-02-20 17:36:36.986  WARN 16964 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.course1]' package. Please check your configuration.
+2020-02-20 17:36:38.413  INFO 16964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-02-20 17:36:38.499  INFO 16964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 17:36:38.500  INFO 16964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-02-20 17:36:38.803  INFO 16964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 17:36:38.805  INFO 16964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3381 ms
+2020-02-20 17:36:39.858  INFO 16964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:36:40.347  INFO 16964 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-02-20 17:36:40.516  INFO 16964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-02-20 17:36:40.523  INFO 16964 --- [main] com.course1.Application                  : Started Application in 6.419 seconds (JVM running for 9.634)
+2020-02-20 17:36:54.836  INFO 16964 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 17:36:54.837  INFO 16964 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 17:36:54.861  INFO 16964 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-02-20 17:39:11.014  INFO 16964 --- [http-nio-8886-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-20 17:39:12.216  INFO 16964 --- [http-nio-8886-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
