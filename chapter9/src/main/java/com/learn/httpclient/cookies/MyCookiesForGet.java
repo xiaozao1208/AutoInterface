@@ -23,7 +23,6 @@ public class MyCookiesForGet {
 
     private String  url;
     private ResourceBundle bundle;
-
     //用来存储cookies信息的变量
     private CookieStore store;
 

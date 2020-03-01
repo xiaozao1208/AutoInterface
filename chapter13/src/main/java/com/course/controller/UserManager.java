@@ -103,7 +103,7 @@ public class UserManager {
 
 
     /**
-     *更新修改接口,删除接口  localhost:8081/updateUserInfo
+     *更新修改接口,删除接口  localhost:8081/v1/updateUserInfo
      */
     @RequestMapping(value="/updateUserInfo",method = RequestMethod.POST)
     @ApiOperation(value="更新/删除用户信息接口",httpMethod = "POST")
@@ -123,7 +123,6 @@ public class UserManager {
     private Boolean verIfyCookies(HttpServletRequest request){
 
         Cookie[] cookies = request.getCookies();
-
         if(Objects.isNull(cookies)){
             log.info("cookies为空");
             return  false;

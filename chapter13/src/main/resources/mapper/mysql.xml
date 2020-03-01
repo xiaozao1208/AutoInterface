@@ -5,12 +5,13 @@
 1.id名称与controller中调用的名称一致;
 2.入参格式的选择,返回结果类型的选择;
 3.sql语句的书写,还包含标点符号;
+4.Jmeter 测试中设置http Cookie Manager 需要设置默name,value,Domain,path;
 -->
 <mapper namespace="com.course">
 
     <!--登录接口sql-->
     <select id="login" parameterType="com.course.model.User" resultType="Integer">
-        select count(*) from test.user12
+        select count(*) from user
         where userName=#{userName}
         and password=#{password};
     </select>
@@ -18,13 +19,13 @@
     <!--添加用户信息-->
     <insert id="addUser" parameterType="com.course.model.User">
       insert into
-      test.user12(userName,password,sex,age,permission,isDelete)
+      user(userName,password,sex,age,permission,isDelete)
        values(#{userName},#{password},#{sex},#{age},#{permission},#{isDelete});
     </insert>
 
     <!--获取用户信息接口-->
     <select id="getUserInfo" parameterType="com.course.model.User" resultType="com.course.model.User">
-      select * from test.user12
+      select * from user
       <trim prefix="WHERE" prefixOverrides="and">
           <if test="null !=id and '' != id">
               AND id=#{id}
@@ -63,7 +64,7 @@
                 userName=#{UserName},//此处的userName的大小写写错了;
      </if>-->
     <update id="updateUserInfo" parameterType="com.course.model.User">
-        update test.user12
+        update user
         <trim prefix="SET" suffixOverrides=",">
             <if test="null != userName and '' != userName">
                 userName=#{userName},

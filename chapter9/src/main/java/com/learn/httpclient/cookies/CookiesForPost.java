@@ -100,9 +100,9 @@ public class CookiesForPost {
         //获取结果值
         String success =(String) resultjson.get("lijuan");
         String status = (String) resultjson.get("status");
-        //具体的判断返回结果的值??? 好像有点问题；
-        Assert.assertEquals("success",success);
-        Assert.assertEquals(1,status);
+        //具体的判断返回结果的值；success是实际返回值，期待值是expected
+        Assert.assertEquals(success,"success");
+        Assert.assertEquals(status,"1");
 
     }
 }

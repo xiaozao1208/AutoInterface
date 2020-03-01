@@ -5,18 +5,18 @@
 
 <mapper namespace="com.course">
     <select id="getUserCount" resultType="Integer">
-        select count(*) from test.user11;
+        select count(*) from user11;
     </select>
 
     <insert id="addUser" parameterType="com.course.model.User">
-        insert  into test.user11(id,name,age,sex) values(#{id},#{name},#{age},#{sex});
+        insert  into user11(id,name,age,sex) values(#{id},#{name},#{age},#{sex});
     </insert>
 
     <update id="updateUser" parameterType="com.course.model.User">
-        update test.user11 set name=#{name},age=#{age} where id=#{id}
+        update user11 set name=#{name},age=#{age} where id=#{id}
     </update>
 
     <delete id="deleteUser" parameterType="Integer">
-        delete from test.user11 where id=#{id}
+        delete from user11 where id=#{id}
     </delete>
 </mapper>

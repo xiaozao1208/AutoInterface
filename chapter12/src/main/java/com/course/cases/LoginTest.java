@@ -72,9 +72,7 @@ public class LoginTest {
 
     }
 
-
-
-
+    //获取调用结果的方法 getResult
     private String getResult(LoginCase loginCase) throws IOException {
         //下边的代码为写完接口的测试代码
         HttpPost post = new HttpPost(TestConfig.loginUrl);

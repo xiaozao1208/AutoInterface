@@ -31,14 +31,12 @@ public class MyPostMethod {
         }
         return "用户名或密码错误";
     }
-
     /**
      * Plugins-lombok-安装使用 @Data
-     *
      * Jmeter中不展示cookies的处理办法是 在jmeter/bin中的jmeter.properties 修改配置文件：
-     *      CookieManager.save.cookies=true，先前默认的是false,修改为true;
+     *   CookieManager.save.cookies=true，先前默认的是false,修改为true;
+     * 此接口访问，请求头，cookie设置，userName=lijuan,password=123456,才会成功；
      */
-
     @RequestMapping(value="/getUserList",method=RequestMethod.POST)
     @ApiOperation(value="获取用户列表",httpMethod="POST")
     public String getUserList(HttpServletRequest request,

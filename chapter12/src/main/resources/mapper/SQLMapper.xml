@@ -6,36 +6,36 @@
 
     <!--获取登陆接口case-->
     <select id="loginCase" parameterType="Integer"  resultType="com.course.model.LoginCase">
-        select * from test.logincase where id=#{id};
+        select * from logincase where id=#{id};
     </select>
 
     <!--添加用户接口case-->
     <select id="addUserCase" parameterType="Integer" resultType="com.course.model.AddUserCase">
-        select * from test.addusercase where id=#{id};
+        select * from addusercase where id=#{id};
     </select>
 
     <!--获取用户信息case-->
     <select id="getUserInfoCase" parameterType="Integer" resultType="com.course.model.GetUserInfoCase">
         <!-- SQL语句 -->
-        select * from test.getuserinfocase where id=#{id};
+        select * from getuserinfocase where id=#{id};
     </select>
 
     <!--获取用户列表case-->
     <select id="getUserListCase" parameterType="Integer" resultType="com.course.model.GetUserListCase">
         <!-- SQL语句 -->
-        select * from test.getuserlistcase where id=#{id};
+        select * from getuserlistcase where id=#{id};
     </select>
 
     <!--更新/删除用户信息case-->
     <select id="updateUserInfoCase" parameterType="Integer" resultType="com.course.model.UpdateUserInfoCase">
-        select * from test.updateuserinfocase where id = #{id};
+        select * from updateuserinfocase where id = #{id};
     </select>
 
 
 
     <!--添加用户接口-->
     <select id="addUser" parameterType="com.course.model.AddUserCase" resultType="com.course.model.User">
-        select * from test.user where
+        select * from user where
         userName=#{userName}
         and password=#{password}
         and sex=#{sex}
@@ -47,14 +47,14 @@
     <!--获取用户信息-->
     <select id="getUserInfo" parameterType="com.course.model.GetUserInfoCase" resultType="com.course.model.User">
         <!-- SQL语句 -->
-        select * from test.user where
+        select * from user where
         id=#{userId};
     </select>
 
     <!--获取用户列表-->
     <select id="getUserList" parameterType="com.course.model.GetUserListCase" resultType="com.course.model.User">
         <!-- SQL语句 -->
-        select * from test.user
+        select * from user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != userName and '' !=userName">
                 AND userName=#{userName}
@@ -69,9 +69,9 @@
         ;
     </select>
 
-    <!--获取更新后的数据-->
+    <!--获取更新/删除后的数据-->
     <select id="getUpdateUserInfo" parameterType="com.course.model.UpdateUserInfoCase" resultType="com.course.model.User">
-        select * from test.user
+        select * from  user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != userName and '' !=userName">
                 AND userName=#{userName}

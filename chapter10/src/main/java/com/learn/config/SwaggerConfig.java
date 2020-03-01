@@ -12,10 +12,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * swagger的配置文件
- * 访问的固定地址： localhost:8081/swagger-ui.html
+ * 访问的固定地址： localhost:8889/swagger-ui.html
  */
-
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {

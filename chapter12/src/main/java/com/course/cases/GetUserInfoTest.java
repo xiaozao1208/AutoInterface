@@ -43,10 +43,14 @@ public class GetUserInfoTest {
 
         List userList = new ArrayList();
         userList.add(user);
+
+        //数据格式不对，导致断言错误；下面是处理方法；
         JSONArray jsonArray = new JSONArray(userList);
+        JSONArray resultJson1 = new JSONArray(resultJson.getString(0));
         System.out.println("获取用户信息:"+jsonArray.toString());
-        System.out.println("调用接口获取用户信息:"+resultJson.toString());
-        Assert.assertEquals(jsonArray.toString(),resultJson.toString().indexOf(0));
+        System.out.println("调用接口获取用户信息:"+resultJson1.toString());
+
+        Assert.assertEquals(jsonArray.toString(),resultJson1.toString());
     }
 
 
